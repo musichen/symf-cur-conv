@@ -36,6 +36,14 @@ php bin/console app:fetch-exchange-rates
 
 The command name is defined in `src/Command/FetchExchangeRatesCommand.php`; run `php bin/console list app` to confirm it in your checkout.
 
+## Tests
+
+Tests live under `tests/` (Command, Controller, and Service) and are configured by `phpunit.xml.dist`. Run them with:
+
+```bash
+vendor/bin/phpunit
+```
+
 ## License
 
 GNU General Public License v3.0. See [LICENSE](LICENSE). Note that `composer.json` currently marks the project `proprietary`; align that field with the LICENSE file before publishing the package metadata.
